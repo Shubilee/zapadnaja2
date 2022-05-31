@@ -1,11 +1,11 @@
 $(function() {
   
 	$(".slider__container").slick({
-	//   autoplay: true,
+	  autoplay: true,
 	  autoplaySpeed:3000,
 	  speed:700,
 	  mobileFirst: true,
-	  dots:false,
+	  dots:true,
 	  slidesToShow:1,
 	  slidesToScroll:1,
 	  pauseOnHover:false,
@@ -13,11 +13,12 @@ $(function() {
 	  cssEase:'linear',
 	  prevArrow:'<div class="prevArrow"></div>',
 	  nextArrow:'<div class="nextArrow"></div>', 
+	  arrows:false,
 	  responsive: [
 		{
 		  breakpoint: 768,
 		  settings: {
-			dots:true,
+			arrows : true,
 		  }
 		}
 		// You can unslick at a given breakpoint now by adding:
