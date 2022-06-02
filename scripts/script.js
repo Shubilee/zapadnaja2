@@ -1,7 +1,7 @@
 $(function() {
   
 	$(".slider__container").slick({
-	  autoplay: true,
+	//   autoplay: true,
 	  autoplaySpeed:3000,
 	  speed:700,
 	  mobileFirst: true,
@@ -26,7 +26,11 @@ $(function() {
 		// instead of a settings object
 	  ]
 	})
-  })
+	$('.popup-with-form').magnificPopup({
+		type: 'inline',
+		focus: '#name'
+	 });
+})
 //   $(function(){
 //     var timeout;
 // function nextSlide(){
