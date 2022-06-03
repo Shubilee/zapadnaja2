@@ -22,7 +22,7 @@
                 <nav class="nav header__nav header__center">
                     <ul class="nav__list list-reset">
                         <li class="nav__item"><a href="./index.html" class="nav__link nav__link-active">главная</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">о нас</a></li>
+                        <li class="nav__item"><a href="./about.html" class="nav__link">о нас</a></li>
                         <li class="nav__item"><a href="#" class="nav__link">продукция</a></li>
                         <li class="nav__item"><a href="#" class="nav__link">логистика</a></li>
                         <li class="nav__item"><a href="#" class="nav__link">общепит</a></li>
@@ -405,12 +405,27 @@
 
         <div id="call-form" class="white-popup mfp-hide">
             <form action="#" class="call-form">
-                <input id="name" class="inputbox" type="text" placeholder="Ваше имя" />
-                <input id="email" class="inputbox" type="email" placeholder="Ваше e-mail" />
-                <textarea name="mess" id="mess" class="inputbox" cols="30" rows="10"
-                        placeholder="Ваше сообщение"></textarea>
-                <input type="submit" value="Отправить">
-                <button class="mfp-close">assasa</button>
+                <h1>Заказать звонок</h1>
+                <div>
+                    <input type="text" required>
+                    <div class="label-box">
+                        <label>Ваше имя:</label>
+                    </div>
+                </div>
+                <div>
+                    <input type="text" required>
+                    <div class="label-box">
+                        <label>Ваш телефон:</label>
+                    </div>
+                </div>
+                <div>
+                    <textarea name="message" class="materialize-textarea"></textarea>
+                    <div class="label-box">
+                        <label class="materialize-textarea-label">Ваш комментарий</label>
+                    </div>
+                </div>
+                <input type="submit" class="btn" value="Отправить" />
+                <button title="Close (Esc)" type="button" class="mfp-close">X</button>
             </form>
         </div>
     </div>
